@@ -1,0 +1,26 @@
+
+
+<suite name="ZOHO testNG Suite" parallel="tests">
+
+	<test name="Login Test" allow-return-vlaue="true">
+		<classes>
+			<class name="com.zoho.project.testcase.LoginTest" />
+		</classes>
+
+	</test>
+
+	<test name="Lead Test" allow-return-vlaue="true">
+		<classes>
+			<class name="com.zoho.project.testcase.LeadTest" />
+		</classes>
+
+	</test>
+
+<!-- 	<test name="TestC" allow-return-vlaue="true">
+		<classes>
+			<class name="com.zoho.project.testcase.LoginTest" />
+		</classes>
+
+	</test>
+ -->	
+	</suite>

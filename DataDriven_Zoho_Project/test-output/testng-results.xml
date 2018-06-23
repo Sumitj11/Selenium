@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="290" started-at="2018-06-19T18:46:08Z" finished-at="2018-06-19T18:46:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="290" started-at="2018-06-19T18:46:08Z" finished-at="2018-06-19T18:46:08Z">
+      <class name="com.zoho.project.testcase.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.zoho.project.testcase.LoginTest@2a742aa2]" name="init" is-config="true" duration-ms="14" started-at="2018-06-19T20:46:08Z" finished-at="2018-06-19T20:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.zoho.project.testcase.LoginTest@2a742aa2]" name="login" duration-ms="9" started-at="2018-06-19T20:46:08Z" finished-at="2018-06-19T20:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.project.testcase.LoginTest@2a742aa2]" name="quit" is-config="true" duration-ms="254" started-at="2018-06-19T20:46:08Z" finished-at="2018-06-19T20:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.zoho.project.testcase.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
