@@ -1,0 +1,70 @@
+Null pointer exception is given if the object is not intialised.
+
+Steps to create project
+
+
+
+
+
+HashTable_Java
+*************
+Name of the suite should be similar to data excel because that we can get the name through  
+-->>>> "Package name - " + this.getClass().getPackage().getName()); 
+*************
+also name of the testcase class.java should be same as the test case name in data sheet so that we can get the test case name through
+-->>>>testCaseName=this.getClass().getSimpleName();
+
+*************
+
+What is reflection API
+
+If variable name and function name is same that variable name can be used to call the function with same name
+
+chapter 8
+User of Reflections API - in Driver class
+set up webdriver in GenericKeyword Class
+
+chapter 9
+Instead of writing find element multiple times in GenericKeywords class create common function called getObject
+------------------------
+Now every where we have hardcoded the sheet name "Keywords" or "Data" or "TestCases" or columns name for that matter.
+ Instead of this create Constants Class under util package and create variable of below types
+public static final String DATA_SHEET = "Data";
+------------------------
+
+ create Common function to find the object using xpath/css/id in GenericKeywords class
+ 
+ chapter 10
+ -- SELENIUM GRID - TO ensure that Nodes are released we have to quit the webdriver and node will not be released. 
+ and further test will not be execcuted. 
+ to ensure that multiple test cases are executed sequentially one after other on different nodes continously
+ we have to ensure that instance of webdriver is quit so that next test case can begin. 
+ to implement this create quit function in DriverClass and BaseClass 
+ 
+ -- create validating functions - isElementPresent / validateTitle / 
+ -- Create reporting fucntions 
+ 
+ chapter 11
+ checking runmode of test case is yes or no
+ 
+ chapter 14 -
+ Soft assert to ensure that program does not stop at all errors
+ Also insert asserts to ensure that program stops at some bit errors - reportFailure function
+ take screenshot
+ 
+ chapter 15 
+ dynamic report name and folder creation
+ 
+ 
+ Chapter 25/26
+ 
+ craete parallel mail file to run test cases in paralle .
+ This has to be ceated under src/test/java/ 
+ execute/TestNGParellelRun.xml 
+ 
+ Plese note that if tehre is space or underscore in xml name it will run. https://github.com/SeleniumHQ/selenium/wiki/Grid2
+ 
+ 
+ 
+ 
+ setup of hub - 

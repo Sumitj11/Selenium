@@ -1,0 +1,8 @@
+<suite name="My suite" >
+ <suite-files>
+   <suite-file path="./src/test/resources/PortFolioTest.xml" />
+   <suite-file path="./src/test/resources/StockSuite.xml" />
+   
+  </suite-files>
+
+</suite>

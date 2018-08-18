@@ -1,0 +1,26 @@
+
+
+<suite name="HybridFramework Rediff" parallel="tests">
+
+	<test name="Login Test" allow-return-vlaue="true">
+		<classes>
+			<class name="com.HybridFramework.PortFolioTest.LoginTest" />
+		</classes>
+
+	</test>
+
+	<test name="Portfolio Test" allow-return-vlaue="true">
+		<classes>
+			<class name="com.HybridFramework.PortFolioTest.PortFolioTest" />
+		</classes>
+
+	</test>
+
+<!-- 	<test name="TestC" allow-return-vlaue="true">
+		<classes>
+			<class name="com.zoho.project.testcase.LoginTest" />
+		</classes>
+
+	</test>
+ -->	
+	</suite>

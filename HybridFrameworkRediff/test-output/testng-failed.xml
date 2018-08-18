@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Stock Suite Test]" parallel="tests">
+  <test name="AddDeleteStock Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.HybridFramework.StockSuite.AddDeleteStock">
+        <methods>
+          <include name="initTest"/>
+          <include name="quit"/>
+          <include name="deleteStockTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.HybridFramework.StockSuite.AddDeleteStock -->
+    </classes>
+  </test> <!-- AddDeleteStock Test(failed) -->
+</suite> <!-- Failed suite [Stock Suite Test] -->

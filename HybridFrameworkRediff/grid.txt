@@ -1,0 +1,17 @@
+
+
+Hub setup->
+java -jar F:\Learning Java\Jar files\selenium-server-standalone-3.14.0.jar -role hub
+
+Node 1 setup-> 
+java -Dwebdriver.gecko.driver="F:\Learning Java\Jar files\geckodriver.exe" -Dwebdriver.chrome.driver="F:\Learning Java\Jar files\chromedriver.exe" -Dwebdriver.ie.driver="F:\Learning Java\Jar files\IEDriverServer.exe" -jar F:\Learning Java\Jar files\selenium-server-standalone-3.14.0.jar -role node -nodeConfig F:\Learning Java\HybridFrameworkRediff\node1.json
+
+Node 2 setup->
+java -Dwebdriver.gecko.driver="F:\Learning Java\Jar files\geckodriver.exe" -Dwebdriver.chrome.driver="F:\Learning Java\Jar files\chromedriver.exe" -Dwebdriver.ie.driver="F:\Learning Java\Jar files\IEDriverServer.exe" -jar F:\Learning Java\Jar files\selenium-server-standalone-3.14.0.jar -role node -nodeConfig F:\Learning Java\HybridFrameworkRediff\node2.json
+
+
+
+
+
+
+

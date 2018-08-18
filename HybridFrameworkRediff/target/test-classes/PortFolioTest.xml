@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stock Suite Test" parallel='tests'>
+
+
+  <test name="AddDeleteStock Test">
+		<classes>
+			<class name="com.HybridFramework.StockSuite.AddDeleteStock" />
+		</classes>
+
+	</test>
+
+</suite>

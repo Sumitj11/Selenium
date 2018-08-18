@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite B]">
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="com.HybridFramework.suiteB.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="loginTest" invocation-numbers="0 1 2"/>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.HybridFramework.suiteB.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [Suite B] -->

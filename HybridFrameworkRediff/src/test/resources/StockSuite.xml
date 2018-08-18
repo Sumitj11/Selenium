@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Portfolio Test" >
+
+
+  <test name="Login Test">
+		<classes>
+			<class name="com.HybridFramework.PortFolioTest.LoginTest" />
+		</classes>
+
+	</test>
+
+	<test name="PortFolio Test">
+		<classes>
+			<class name="com.HybridFramework.PortFolioTest.PortFolioTest" />
+		</classes>
+
+	</test>
+
+</suite>

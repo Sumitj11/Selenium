@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">3 suites, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Portfolio_Test">
+              <span class="suite-name border-failed">Portfolio Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Portfolio_Test">
+                    <span>F:\Learning Java\HybridFrameworkRediff\src\test\resources\StockSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Portfolio_Test">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Portfolio_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Portfolio_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Portfolio_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Portfolio_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Portfolio_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Portfolio_Test" class="hide-methods failed suite-Portfolio_Test"> (hide)</a> <!-- hide-methods failed suite-Portfolio_Test -->
+                      <a href="#" panel-name="suite-Portfolio_Test" class="show-methods failed suite-Portfolio_Test"> (show)</a> <!-- show-methods failed suite-Portfolio_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Portfolio_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.HybridFramework.PortFolioTest.LoginTest" hash-for-method="loginTest({ExpectedResult=LoginSuccess, Password=Password@2, Runmode=Y, UserName=sumitj050483, Browser=firefox...)">loginTest({ExpectedResult=LoginSuccess, Password=Password@2, Runmode=Y, UserName=sumitj050483, Browser=firefox...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Portfolio_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Portfolio_Test" class="hide-methods passed suite-Portfolio_Test"> (hide)</a> <!-- hide-methods passed suite-Portfolio_Test -->
+                      <a href="#" panel-name="suite-Portfolio_Test" class="show-methods passed suite-Portfolio_Test"> (show)</a> <!-- show-methods passed suite-Portfolio_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Portfolio_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.HybridFramework.PortFolioTest.PortFolioTest" hash-for-method="createPortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})">createPortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.HybridFramework.PortFolioTest.PortFolioTest" hash-for-method="createPortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})">createPortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.HybridFramework.PortFolioTest.PortFolioTest" hash-for-method="deletePortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})">deletePortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.HybridFramework.PortFolioTest.PortFolioTest" hash-for-method="deletePortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})">deletePortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Portfolio_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Stock_Suite_Test">
+              <span class="suite-name border-skipped">Stock Suite Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Stock_Suite_Test">
+                    <span>F:\Learning Java\HybridFrameworkRediff\src\test\resources\PortFolioTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Stock_Suite_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Stock_Suite_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Stock_Suite_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Stock_Suite_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Stock_Suite_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Stock_Suite_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Stock_Suite_Test" class="hide-methods skipped suite-Stock_Suite_Test"> (hide)</a> <!-- hide-methods skipped suite-Stock_Suite_Test -->
+                      <a href="#" panel-name="suite-Stock_Suite_Test" class="show-methods skipped suite-Stock_Suite_Test"> (show)</a> <!-- show-methods skipped suite-Stock_Suite_Test -->
+                    </span>
+                    <div class="method-list-content skipped suite-Stock_Suite_Test">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite_Test" title="com.HybridFramework.StockSuite.AddDeleteStock" hash-for-method="deleteStockTest">deleteStockTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Stock_Suite_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Stock_Suite_Test" class="hide-methods passed suite-Stock_Suite_Test"> (hide)</a> <!-- hide-methods passed suite-Stock_Suite_Test -->
+                      <a href="#" panel-name="suite-Stock_Suite_Test" class="show-methods passed suite-Stock_Suite_Test"> (show)</a> <!-- show-methods passed suite-Stock_Suite_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Stock_Suite_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite_Test" title="com.HybridFramework.StockSuite.AddDeleteStock" hash-for-method="addStockTest({Date=12-08-2018, PurchasePrice=100.0, PortfolioName=Portfolio3, Runmode=Y, Quantity=10.0, StockName...)">addStockTest({Date=12-08-2018, PurchasePrice=100.0, PortfolioName=Portfolio3, Runmode=Y, Quantity=10.0, StockName...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Stock_Suite_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_suite" class="panel My_suite">
+        </div> <!-- panel My_suite -->
+        <div panel-name="suite-Portfolio_Test" class="panel Portfolio_Test">
+          <div class="suite-Portfolio_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.HybridFramework.PortFolioTest.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({ExpectedResult=LoginSuccess, Password=Password@2, Runmode=Y, UserName=sumitj050483, Browser=firefox...)">
+                  </a> <!-- loginTest({ExpectedResult=LoginSuccess, Password=Password@2, Runmode=Y, UserName=sumitj050483, Browser=firefox...) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({ExpectedResult=LoginSuccess, Password=Password@2, Runmode=Y, UserName=sumitj050483, Browser=firefox})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at com.HybridFramework.driver.DriverClass.executeKeywords(DriverClass.java:98)
+	at com.HybridFramework.PortFolioTest.LoginTest.loginTest(LoginTest.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.HybridFramework.keywords.GenericKeywords.navigate(GenericKeywords.java:121)
+	... 27 more
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-failed -->
+          <div class="suite-Portfolio_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.HybridFramework.PortFolioTest.PortFolioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})">
+                  </a> <!-- createPortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox}) -->
+                  <span class="method-name">createPortfolioTest</span>
+                  <span class="parameters">({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})">
+                  </a> <!-- createPortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox}) -->
+                  <span class="method-name">createPortfolioTest</span>
+                  <span class="parameters">({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})">
+                  </a> <!-- deletePortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox}) -->
+                  <span class="method-name">deletePortfolioTest</span>
+                  <span class="parameters">({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})">
+                  </a> <!-- deletePortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox}) -->
+                  <span class="method-name">deletePortfolioTest</span>
+                  <span class="parameters">({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-passed -->
+        </div> <!-- panel Portfolio_Test -->
+        <div panel-name="suite-Stock_Suite_Test" class="panel Stock_Suite_Test">
+          <div class="suite-Stock_Suite_Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.HybridFramework.StockSuite.AddDeleteStock</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteStockTest">
+                  </a> <!-- deleteStockTest -->
+                  <span class="method-name">deleteStockTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method deleteStockTest requires 1 parameters but 0 were supplied in the @Test annotation.
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite_Test-class-skipped -->
+          <div class="suite-Stock_Suite_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.HybridFramework.StockSuite.AddDeleteStock</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addStockTest({Date=12-08-2018, PurchasePrice=100.0, PortfolioName=Portfolio3, Runmode=Y, Quantity=10.0, StockName...)">
+                  </a> <!-- addStockTest({Date=12-08-2018, PurchasePrice=100.0, PortfolioName=Portfolio3, Runmode=Y, Quantity=10.0, StockName...) -->
+                  <span class="method-name">addStockTest</span>
+                  <span class="parameters">({Date=12-08-2018, PurchasePrice=100.0, PortfolioName=Portfolio3, Runmode=Y, Quantity=10.0, StockName=Tata Motors Ltd, Browser=Firefox})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite_Test-class-passed -->
+        </div> <!-- panel Stock_Suite_Test -->
+        <div panel-name="test-xml-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Learning Java\HybridFrameworkRediff\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;My suite&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./src/test/resources/PortFolioTest.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./src/test/resources/StockSuite.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Learning Java\HybridFrameworkRediff\src\test\resources\StockSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Portfolio Test&quot;&gt;
+  &lt;test name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.HybridFramework.PortFolioTest.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test name=&quot;PortFolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.HybridFramework.PortFolioTest.PortFolioTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PortFolio Test --&gt;
+&lt;/suite&gt; &lt;!-- Portfolio Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Learning Java\HybridFrameworkRediff\src\test\resources\PortFolioTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Stock Suite Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;AddDeleteStock Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.HybridFramework.StockSuite.AddDeleteStock&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddDeleteStock Test --&gt;
+&lt;/suite&gt; &lt;!-- Stock Suite Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PortFolio Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Stock Suite Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AddDeleteStock Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Stock Suite Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_suite');
+function tableData_My_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_suite']= { tableData: data, tableDiv: 'times-div-My_suite'}
+return data;
+}
+              </script>
+              <div id="times-div-My_suite">
+              </div> <!-- times-div-My_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Portfolio_Test');
+function tableData_Portfolio_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createPortfolioTest')
+data.setCell(0, 2, 'com.HybridFramework.PortFolioTest.PortFolioTest')
+data.setCell(0, 3, 58364);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deletePortfolioTest')
+data.setCell(1, 2, 'com.HybridFramework.PortFolioTest.PortFolioTest')
+data.setCell(1, 3, 48866);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deletePortfolioTest')
+data.setCell(2, 2, 'com.HybridFramework.PortFolioTest.PortFolioTest')
+data.setCell(2, 3, 44413);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createPortfolioTest')
+data.setCell(3, 2, 'com.HybridFramework.PortFolioTest.PortFolioTest')
+data.setCell(3, 3, 40474);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'com.HybridFramework.PortFolioTest.LoginTest')
+data.setCell(4, 3, 13);
+window.suiteTableData['Portfolio_Test']= { tableData: data, tableDiv: 'times-div-Portfolio_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Portfolio_Test">
+              </div> <!-- times-div-Portfolio_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Stock Suite Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Stock_Suite_Test');
+function tableData_Stock_Suite_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addStockTest')
+data.setCell(0, 2, 'com.HybridFramework.StockSuite.AddDeleteStock')
+data.setCell(0, 3, 45271);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deleteStockTest')
+data.setCell(1, 2, 'com.HybridFramework.StockSuite.AddDeleteStock')
+data.setCell(1, 3, 0);
+window.suiteTableData['Stock_Suite_Test']= { tableData: data, tableDiv: 'times-div-Stock_Suite_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <div id="times-div-Stock_Suite_Test">
+              </div> <!-- times-div-Stock_Suite_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Stock Suite Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.HybridFramework.PortFolioTest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest({ExpectedResult=LoginSuccess, Password=Password@2, Runmode=Y, UserName=sumitj050483, Browser=firefox...)</span>
+                <span class="method-start">457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">471 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.HybridFramework.PortFolioTest.PortFolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">893 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">createPortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})</span>
+                <span class="method-start">900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">900 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">59264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">createPortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})</span>
+                <span class="method-start">59310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">59310 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">99784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">99827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deletePortfolioTest({PortfolioName=Portfolio10, Runmode=Y, Browser=Firefox})</span>
+                <span class="method-start">99828 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">148694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">deletePortfolioTest({PortfolioName=Portfolio11, Runmode=Y, Browser=Firefox})</span>
+                <span class="method-start">148744 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">148744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">193157 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Stock_Suite_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.HybridFramework.StockSuite.AddDeleteStock</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addStockTest({Date=12-08-2018, PurchasePrice=100.0, PortfolioName=Portfolio3, Runmode=Y, Quantity=10.0, StockName...)</span>
+                <span class="method-start">457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">45728 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
