@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="5" total="8" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite B" duration-ms="14407" started-at="2018-08-04T08:21:26Z" finished-at="2018-08-04T08:21:41Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="14407" started-at="2018-08-04T08:21:26Z" finished-at="2018-08-04T08:21:41Z">
+      <class name="com.HybridFramework.suiteB.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="init" is-config="true" duration-ms="4" started-at="2018-08-04T10:21:26Z" finished-at="2018-08-04T10:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="loginTest" duration-ms="14230" started-at="2018-08-04T10:21:26Z" data-provider="getData" finished-at="2018-08-04T10:21:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=Zoho Home, Password=Password@2, Runmode=Y, UserName=sumitj11@gmail.com, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Title did not match after Login. Expected -> Zoho Home ||  Actual title found -> Zoho Accounts]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Title did not match after Login. Expected -> Zoho Home ||  Actual title found -> Zoho Accounts
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.HybridFramework.driver.DriverClass.executeKeywords(DriverClass.java:101)
+	at com.HybridFramework.suiteB.LoginTest.loginTest(LoginTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-04T10:21:26Z" finished-at="2018-08-04T10:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="quit" is-config="true" duration-ms="63" started-at="2018-08-04T10:21:41Z" finished-at="2018-08-04T10:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-04T10:21:41Z" finished-at="2018-08-04T10:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="loginTest" duration-ms="3" started-at="2018-08-04T10:21:41Z" data-provider="getData" finished-at="2018-08-04T10:21:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=LoginFailure, Password=Pass2, Runmode=N, UserName=User2, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode is set to NO ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode is set to NO 
+	at com.HybridFramework.suiteB.LoginTest.loginTest(LoginTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="quit" is-config="true" duration-ms="49" started-at="2018-08-04T10:21:41Z" finished-at="2018-08-04T10:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-04T10:21:41Z" finished-at="2018-08-04T10:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="loginTest" duration-ms="1" started-at="2018-08-04T10:21:41Z" data-provider="getData" finished-at="2018-08-04T10:21:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=LoginSuccess, Password=Pass3, Runmode=N, UserName=User3, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode is set to NO ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode is set to NO 
+	at com.HybridFramework.suiteB.LoginTest.loginTest(LoginTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteB.LoginTest@490ab905]" name="quit" is-config="true" duration-ms="50" started-at="2018-08-04T10:21:41Z" finished-at="2018-08-04T10:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.HybridFramework.suiteB.LoginTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Suite B -->
+  <suite name="Suite A" duration-ms="61055" started-at="2018-08-04T08:20:25Z" finished-at="2018-08-04T08:21:26Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="52641" started-at="2018-08-04T08:20:25Z" finished-at="2018-08-04T08:21:18Z">
+      <class name="com.HybridFramework.suiteA.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="init" is-config="true" duration-ms="365" started-at="2018-08-04T10:20:25Z" finished-at="2018-08-04T10:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="initTest" is-config="true" duration-ms="758" started-at="2018-08-04T10:20:26Z" finished-at="2018-08-04T10:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="loginTest" duration-ms="19867" started-at="2018-08-04T10:20:26Z" data-provider="getData" finished-at="2018-08-04T10:20:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=Zoho Home, Password=Password@2, Runmode=Y, UserName=sumitj11@gmail.com, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Title did not match after Login. Expected -> Zoho Home ||  Actual title found -> Zoho Accounts]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Title did not match after Login. Expected -> Zoho Home ||  Actual title found -> Zoho Accounts
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.HybridFramework.driver.DriverClass.executeKeywords(DriverClass.java:101)
+	at com.HybridFramework.suiteA.LoginTest.loginTest(LoginTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="quit" is-config="true" duration-ms="629" started-at="2018-08-04T10:20:46Z" finished-at="2018-08-04T10:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-04T10:20:47Z" finished-at="2018-08-04T10:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="loginTest" duration-ms="17761" started-at="2018-08-04T10:20:47Z" data-provider="getData" finished-at="2018-08-04T10:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=LoginFailure, Password=Pass2, Runmode=Y, UserName=User2, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Title did not match after Login. Expected -> LoginFailure ||  Actual title found -> Zoho Accounts]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Title did not match after Login. Expected -> LoginFailure ||  Actual title found -> Zoho Accounts
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.HybridFramework.driver.DriverClass.executeKeywords(DriverClass.java:101)
+	at com.HybridFramework.suiteA.LoginTest.loginTest(LoginTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="quit" is-config="true" duration-ms="59" started-at="2018-08-04T10:21:05Z" finished-at="2018-08-04T10:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="loginTest" duration-ms="13002" started-at="2018-08-04T10:21:05Z" data-provider="getData" finished-at="2018-08-04T10:21:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=LoginFailure, Password=Pass3, Runmode=Y, UserName=User3, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Title did not match after Login. Expected -> LoginFailure ||  Actual title found -> Zoho Accounts]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Title did not match after Login. Expected -> LoginFailure ||  Actual title found -> Zoho Accounts
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.HybridFramework.driver.DriverClass.executeKeywords(DriverClass.java:101)
+	at com.HybridFramework.suiteA.LoginTest.loginTest(LoginTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-04T10:21:05Z" finished-at="2018-08-04T10:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteA.LoginTest@e25b2fe]" name="quit" is-config="true" duration-ms="50" started-at="2018-08-04T10:21:18Z" finished-at="2018-08-04T10:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.HybridFramework.suiteA.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Test B" duration-ms="8376" started-at="2018-08-04T08:21:18Z" finished-at="2018-08-04T08:21:26Z">
+      <class name="com.HybridFramework.suiteA.TestB">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="init" is-config="true" duration-ms="12" started-at="2018-08-04T10:21:18Z" finished-at="2018-08-04T10:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-04T10:21:18Z" finished-at="2018-08-04T10:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="testB(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="testB" duration-ms="8263" started-at="2018-08-04T10:21:18Z" data-provider="getData" finished-at="2018-08-04T10:21:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col2=Dummy2, Runmode=Y, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="quit" is-config="true" duration-ms="45" started-at="2018-08-04T10:21:26Z" finished-at="2018-08-04T10:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-04T10:21:26Z" finished-at="2018-08-04T10:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="testB(java.util.Hashtable)[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="testB" duration-ms="1" started-at="2018-08-04T10:21:26Z" data-provider="getData" finished-at="2018-08-04T10:21:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col2=Dummy4, Runmode=Y, Browser=s}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.HybridFramework.driver.DriverClass.executeKeywords(DriverClass.java:97)
+	at com.HybridFramework.suiteA.TestB.testB(TestB.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+	at com.HybridFramework.keywords.GenericKeywords.openBrowser(GenericKeywords.java:83)
+	... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.HybridFramework.suiteA.TestB@5700d6b1]" name="quit" is-config="true" duration-ms="48" started-at="2018-08-04T10:21:26Z" finished-at="2018-08-04T10:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.HybridFramework.suiteA.TestB -->
+    </test> <!-- Test B -->
+  </suite> <!-- Suite A -->
+  <suite name="My suite" duration-ms="0" started-at="2018-08-04T08:21:41Z" finished-at="2018-08-04T08:21:41Z">
+    <groups>
+    </groups>
+  </suite> <!-- My suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite A" >
+
+
+  <test name="Login Test">
+		<classes>
+			<class name="com.HybridFramework.suiteA.LoginTest" />
+		</classes>
+
+	</test>
+
+	<test name="Test B">
+		<classes>
+			<class name="com.HybridFramework.suiteA.TestB" />
+		</classes>
+
+	</test>
+
+</suite>
